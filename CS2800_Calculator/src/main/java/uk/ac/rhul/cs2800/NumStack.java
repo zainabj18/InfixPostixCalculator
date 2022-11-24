@@ -1,5 +1,7 @@
 package uk.ac.rhul.cs2800;
 
+import java.util.EmptyStackException;
+
 /**
  * creating a class called NumStack and creating a stack using the Stack class. string and type.
  * 
@@ -27,6 +29,20 @@ public class NumStack {
   public void push(float newElement) {
     numStack.push(new Entry(newElement));
 
+  }
+
+
+  /**
+   * @return the float value that is popped when pop() is called.
+   * 
+   * @throws EmptyStackException if the stack is empty.
+   */
+  public float pop() throws EmptyStackException {
+    try {
+      return numStack.pop().getFloatValue();
+    } catch (BadTypeException e) {
+      return Float.POSITIVE_INFINITY;
+    }
 
   }
 
