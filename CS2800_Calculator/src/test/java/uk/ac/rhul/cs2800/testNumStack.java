@@ -54,12 +54,28 @@ public class testNumStack {
   //test to check whether the pop() method returns the top value from the stack
   //pushed 4 elements onto the stack then popped the top most element using pop()
   @Test
-  void testPopOnStackAfterPushingMultipleElements() {
+  void testPopOnStackAfterPushingElements() {
     numStack.push(3.0f);
     numStack.push(4.3f);
     numStack.push(1.7f);
     numStack.push(5.2f);
     assertEquals(numStack.pop(), 5.2f);
+  }
+  
+  //testing the isEmpty() method on an empty stack to check
+  //whether the method returns true when stack size is 0
+  @Test
+  void testIsEmptyOnEmptyStack() {
+    assertEquals(numStack.isEmpty(), true);
+  }
+  
+  //testing isEmpty() method on an non empty stack to
+  //check if the method returns false when stack size is not 0
+  // and has elements in it.
+  @Test
+  void testIsEmptyOnNonEmptyStack() {
+    numStack.push(3.6f);
+    assertEquals(numStack.isEmpty(), false);
   }
 
 }

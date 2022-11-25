@@ -28,7 +28,6 @@ public class NumStack {
    */
   public void push(float newElement) {
     numStack.push(new Entry(newElement));
-
   }
 
 
@@ -44,6 +43,14 @@ public class NumStack {
       return Float.POSITIVE_INFINITY;
     }
 
+  }
+  
+  /**
+   * @return boolean value true if the stack is empty (size = 0)
+   * else return false
+   */
+  public boolean isEmpty() {
+    return numStack.sizeOfStack() == 0;
   }
 
 }
