@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -10,5 +11,11 @@
          <font>
             <Font size="41.0" />
          </font></Label>
+      <TextField fx:id="inputField" layoutX="174.0" layoutY="121.0" prefHeight="43.0" prefWidth="202.0" />
+      <Label fx:id="inputLabel" layoutX="197.0" layoutY="86.0" text="Input an expression">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
