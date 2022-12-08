@@ -16,16 +16,25 @@ import javafx.scene.layout.Pane;
 public class MainView {
 
   /**
-   * Private instance of Pane type called mainPane. Private instance of Label type called
-   * calculatorLabel. Private instance of Label type called inputLabel. Private instance of
-   * TextField type called inputField. Private instance of type Button called calculatorButton. Two
-   * Private instances of RadioButton type called infixButton and reversePolishButton.
+   * Private instance of Pane type called mainPane that will draw out the main pane for the
+   * calculator. Private instance of Label type called calculatorLabel that displays the word
+   * 'CALCULATOR' on the main pane. Private instance of Label type called inputLabel that displays
+   * "Enter an expression". Private instance of TextField type called inputField that will take in
+   * the expression needed to be solved. Private instance of type Button called calculatorButton
+   * that will solve the expression once pressed. Two Private instances of RadioButton type called
+   * infixButton and reversePolishButton that will change the setting depending which type of
+   * expression they want to solve.. Private instance of TextField called resultField that will
+   * display the solution to the question. Private instance of Label type called resultLabel that
+   * displays "Solution" to make it easier for users to navigate through.
    */
+  @FXML
+  private Button calculateButton;
+
   @FXML
   private Label calculatorLabel;
 
   @FXML
-  private Button calculateButton;
+  private RadioButton infixButton;
 
   @FXML
   private TextField inputField;
@@ -34,12 +43,14 @@ public class MainView {
   private Label inputLabel;
 
   @FXML
-  private RadioButton infixButton;
+  private Pane mainPane;
+
+  @FXML
+  private TextField resultField;
+
+  @FXML
+  private Label resultLabel;
 
   @FXML
   private RadioButton reversePolishButton;
-
-  @FXML
-  private Pane mainPane;
-
 }
