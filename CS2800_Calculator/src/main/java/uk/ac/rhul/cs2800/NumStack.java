@@ -32,6 +32,8 @@ public class NumStack {
 
 
   /**
+   * created a method pop.
+   * 
    * @return the float value that is popped when pop() is called.
    * 
    * @throws EmptyStackException if the stack is empty.
@@ -44,10 +46,11 @@ public class NumStack {
     }
 
   }
-  
+
   /**
-   * @return boolean value true if the stack is empty (size = 0)
-   * else return false
+   * hoskjdksadk.
+   * 
+   * @return boolean value true if the stack is empty (size = 0) else return false
    */
   public boolean isEmpty() {
     return numStack.sizeOfStack() == 0;
