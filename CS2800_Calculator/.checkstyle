@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="false">
-  <local-check-config name="maven-checkstyle-plugin validate" location="file:/C:/Users/jaffa/Downloads/TDDdemo%20(1)/TTDdemo/src/main/resources/googlePlus.xml" type="remote" description="maven-checkstyle-plugin configuration validate">
+  <local-check-config name="maven-checkstyle-plugin validate" location="file:/C:/Users/jaffa/OneDrive/Documents/UNI/year%202/software%20engineering/GitLab/CS2800/CS2800_Calculator/src/main/resources/googlePlus.xml" type="remote" description="maven-checkstyle-plugin configuration validate">
     <property name="checkstyle.header.file" value="C:\Users\jaffa\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\CS2800_Calculator\com.basistech.m2e.code.quality.checkstyleConfigurator\checkstyle-header-validate.txt"/>
     <property name="checkstyle.cache.file" value="${project_loc}/target/checkstyle-cachefile"/>
   </local-check-config>
