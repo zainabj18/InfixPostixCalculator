@@ -14,12 +14,12 @@ public class MainView {
 
   /**
    * Private instance of Pane type called mainPane. Private instance of Label type called
-   * numberLabel.
+   * calculatorLabel.
    */
   @FXML
-  private Pane mainPane;
+  private Label calculatorLabel;
 
   @FXML
-  private Label numberLabel;
+  private Pane mainPane;
 
 }
