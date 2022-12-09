@@ -48,7 +48,7 @@ public class NumStack {
   }
 
   /**
-   * hoskjdksadk.
+   * boolean method created to check if the stack is empty.
    * 
    * @return boolean value true if the stack is empty (size = 0) else return false
    */
