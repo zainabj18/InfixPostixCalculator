@@ -35,4 +35,17 @@ class TestReversePolishCalc {
     assertThrows(InvalidExpression.class, () -> calculator.evaluate(""),
         "You cannot perform reverse polish calculation on an empty expression");
   }
+
+  // test to check when only one character is inputted, it returns it without carrying out any
+  // calculation
+
+  @Test
+  void testOneCharReturnsItself() {
+    String s = "3";
+    float result = calculator.evaluate(s);
+    assertEquals(result, 3);
+  }
+
+
+
 }
