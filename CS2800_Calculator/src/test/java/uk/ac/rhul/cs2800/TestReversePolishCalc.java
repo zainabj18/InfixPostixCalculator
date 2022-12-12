@@ -77,4 +77,21 @@ class TestReversePolishCalc {
     float result = calculator.evaluate(string);
     assertEquals(result, 3);
   }
+
+
+  // test to see if a valid reverse polish expression with decimals can be added.
+  @Test
+  void testRevPolishExpressionAdditionWithDecimals() {
+    String string = "2.4 4 +";
+    float result = calculator.evaluate(string);
+    assertEquals(result, 6.4f);
+  }
+
+  // test to see if a valid reverse polish expression with double digits can be added.
+  @Test
+  void testRevPolishExpressionAdditionWithDoubleDigits() {
+    String string = "12 4 +";
+    float result = calculator.evaluate(string);
+    assertEquals(result, 16f);
+  }
 }
