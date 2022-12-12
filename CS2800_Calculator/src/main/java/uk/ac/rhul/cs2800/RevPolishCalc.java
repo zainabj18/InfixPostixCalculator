@@ -19,7 +19,8 @@ public class RevPolishCalc {
    * inputted is a valid expression after removing the white spaces in between the expression.. If
    * not, it then throws an invalid expression exception. Then used a for loop to check whether the
    * current input is a symbol. If its not a symbol, it pushes the number onto the stack. Used a
-   * switch to check for each case. If its a plus symbol, it should add the two values.
+   * switch to check for each case. If its a plus symbol, it should add the two values. If its a
+   * subtract symbol, it should subtract the two values.
    * 
    * @param stringToEvaluate is a string type parameter passed in the evaluate function that checks
    *        the validity of the expressions against a reverse polish expression's structure.
@@ -41,6 +42,9 @@ public class RevPolishCalc {
           switch (newString.charAt(0)) {
             case '+':
               stack.push(value2 + value1);
+              break;
+            case '-':
+              stack.push(value2 - value1);
               break;
             default:
               stack.push(Float.parseFloat(newString));

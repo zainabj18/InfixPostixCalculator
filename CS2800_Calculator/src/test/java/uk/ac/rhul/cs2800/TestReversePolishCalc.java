@@ -45,12 +45,20 @@ class TestReversePolishCalc {
     float result = calculator.evaluate(string);
     assertEquals(result, 3);
   }
-  
-  
-  @Test 
+
+  // test to see if a valid reverse polish expression can be added.
+  @Test
   void testRevPolishExpression() {
     String string = "2 4 +";
     float result = calculator.evaluate(string);
     assertEquals(result, 6);
+  }
+
+  // test to see if a valid reverse polish expression can be subtracted.
+  @Test
+  void testRevPolishExpressionForSymbolSubtract() {
+    String string = "7 2 -";
+    float result = calculator.evaluate(string);
+    assertEquals(result, 5);
   }
 }
