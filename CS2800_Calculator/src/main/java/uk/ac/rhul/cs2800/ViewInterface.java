@@ -1,8 +1,5 @@
 package uk.ac.rhul.cs2800;
 
-import java.util.function.Consumer;
-import uk.ac.rhul.cs2800.Observer;
-
 /**
  * How we want to interact with our calculator. Just defines the data and provides hooks for
  * notification and insertion of observers. Credit to: Dave Cohen from his code MVC-separated
