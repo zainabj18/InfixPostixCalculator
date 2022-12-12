@@ -61,4 +61,12 @@ class TestReversePolishCalc {
     float result = calculator.evaluate(string);
     assertEquals(result, 5);
   }
+
+  // test to see if a valid reverse polish expression can be multipled.
+  @Test
+  void testRevPolishExpressionForMultiplication() {
+    String string = "4 2 x";
+    float result = calculator.evaluate(string);
+    assertEquals(result, 8);
+  }
 }

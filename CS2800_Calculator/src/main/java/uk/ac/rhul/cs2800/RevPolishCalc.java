@@ -46,6 +46,9 @@ public class RevPolishCalc {
             case '-':
               stack.push(value2 - value1);
               break;
+            case 'x':
+              stack.push(value2 * value1);
+              break;
             default:
               stack.push(Float.parseFloat(newString));
           }
