@@ -62,11 +62,19 @@ class TestReversePolishCalc {
     assertEquals(result, 5);
   }
 
-  // test to see if a valid reverse polish expression can be multipled.
+  // test to see if a valid reverse polish expression can be multiplied.
   @Test
   void testRevPolishExpressionForMultiplication() {
     String string = "4 2 x";
     float result = calculator.evaluate(string);
     assertEquals(result, 8);
+  }
+
+  // test to see if a valid reverse polish expression can be divided.
+  @Test
+  void testRevPolishExpressionForDivision() {
+    String string = "9 3 /";
+    float result = calculator.evaluate(string);
+    assertEquals(result, 3);
   }
 }
