@@ -1,5 +1,7 @@
 package uk.ac.rhul.cs2800;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -9,11 +11,48 @@ import javafx.scene.layout.Pane;
 
 /**
  * Created a class called MainView which includes the attributes of the main pane of the calculator.
+ * Credit to: Dave Cohen for the addCalcObserver method, getQuestion method and setAnswer method.
  * 
  * @author Zainab
  *
  */
-public class MainView {
+public class MainView implements ViewInterface {
+
+  /**
+   * This allows a new observer to be added to the change calculate strategy action.
+   * 
+   * @param f the Observer to be notified.
+   */
+  public void addCalcObserver(Observer f) {
+    calculateButton.setOnAction(new EventHandler<ActionEvent>() {
+
+      @Override
+      public void handle(ActionEvent event) {
+        f.tell();
+      }
+    });
+  }
+
+  /**
+   * A hook to expose the question to another class.
+   * 
+   * @return the arithmetic expression to be evaluated.
+   */
+  public String getQuestion() {
+    return inputField.getText();
+  }
+
+  /**
+   * A hook to allow the answer to be displayed.
+   * 
+   * @param a the evaluated answer.
+   */
+  public void setAnswer(String a) {
+    resultField.setText(a);
+  }
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////////
 
   /**
    * Private instance of Pane type called mainPane that will draw out the main pane for the
