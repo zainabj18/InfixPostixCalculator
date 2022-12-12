@@ -7,7 +7,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
- * creating a class Driver that extends from the inbuilt javafx application and launches the main
+ * creating a class Driver that extends from the inbuilt javaFx application and launches the main
  * pane of the calculator.
  * 
  * @author Zainab

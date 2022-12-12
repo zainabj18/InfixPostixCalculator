@@ -27,5 +27,10 @@ public enum Symbol {
     return name() + " " + symbol;
   }
 
+  char getValue() {
+    char c = symbol.charAt(0);
+    return c;
+  }
+
 
 }
