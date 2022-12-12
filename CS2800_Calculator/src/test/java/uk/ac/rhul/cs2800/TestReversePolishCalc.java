@@ -41,11 +41,16 @@ class TestReversePolishCalc {
 
   @Test
   void testOneCharReturnsItself() {
-    String s = "3";
-    float result = calculator.evaluate(s);
+    String string = "3";
+    float result = calculator.evaluate(string);
     assertEquals(result, 3);
   }
-
-
-
+  
+  
+  @Test 
+  void testRevPolishExpression() {
+    String string = "2 4 +";
+    float result = calculator.evaluate(string);
+    assertEquals(result, 6);
+  }
 }
