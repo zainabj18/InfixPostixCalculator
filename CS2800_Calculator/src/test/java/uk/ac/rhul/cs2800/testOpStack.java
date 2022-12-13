@@ -1,5 +1,6 @@
 package uk.ac.rhul.cs2800;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -60,6 +61,17 @@ public class testOpStack {
   void testPushDivideOnStack() {
     opStack.push(Symbol.DIVIDE);
 
+  }
+
+
+  // test to see whether an element can be popped from a stack.
+  // created an element of symbol type and pushed it on to the stack
+  // then popped it from the stack.
+  // If the element is popped, the test passes.
+  @Test
+  void testPopOnStack() {
+    opStack.push(Symbol.PLUS);
+    assertEquals(opStack.pop(), Symbol.PLUS);
   }
 
 

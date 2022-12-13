@@ -1,5 +1,7 @@
 package uk.ac.rhul.cs2800;
 
+import java.util.EmptyStackException;
+
 /**
  * Creating a class called OpStack and then creating a stack of Stack type.
  * 
@@ -27,4 +29,21 @@ public class OpStack {
 
   }
 
+  /**
+   * created a pop method that pops the top most element of the stack.
+   * 
+   * @return the invalid symbol created in the symbol class
+   * @throws EmptyStackException when the stack is empty
+   */
+  public Symbol pop() throws EmptyStackException {
+    try {
+      return opStack.pop().getSymbolValue();
+    } catch (BadTypeException e) {
+      return Symbol.INVALID;
+    }
+
+  }
+
 }
+
+
