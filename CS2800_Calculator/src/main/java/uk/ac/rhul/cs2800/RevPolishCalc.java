@@ -28,7 +28,7 @@ public class RevPolishCalc {
    */
   public static RevPolishCalc getInstance() {
     if (instance == null) {
-      instance = new RevPolishCalc();  
+      instance = new RevPolishCalc();
     }
     return instance;
   }
@@ -55,6 +55,7 @@ public class RevPolishCalc {
       String[] inputString = stringToEvaluate.split(" "); // Removes white space
 
       if (stringToEvaluate.equals("")) {
+        System.out.print("Invalid. Must enter an expression to calculate");
         throw new InvalidExpression();
       }
       for (String newString : inputString) {
@@ -84,6 +85,7 @@ public class RevPolishCalc {
 
       result = stack.pop();
     } catch (Exception e) {
+      System.out.print("Invalid. Must enter a reverse polish expression.");
       throw new InvalidExpression();
     }
     return result;
