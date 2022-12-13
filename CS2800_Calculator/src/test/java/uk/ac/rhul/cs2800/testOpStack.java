@@ -95,4 +95,16 @@ public class testOpStack {
   }
 
 
+  // test to check whether the pop() method returns the top value from the stack
+  // pushed 4 elements onto the stack then popped the top most element using pop()
+  @Test
+  void testPopOnStackAfterPushingElements() {
+    opStack.push(Symbol.PLUS);
+    opStack.push(Symbol.MINUS);
+    opStack.push(Symbol.LEFT_BRACKET);
+    opStack.push(Symbol.DIVIDE);
+    assertEquals(opStack.pop(), Symbol.DIVIDE);
+  }
+
+
 }
