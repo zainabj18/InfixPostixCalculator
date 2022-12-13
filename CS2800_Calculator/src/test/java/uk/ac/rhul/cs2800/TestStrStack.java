@@ -1,5 +1,6 @@
 package uk.ac.rhul.cs2800;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -32,6 +33,17 @@ public class TestStrStack {
     strStack.push("string 1");
     strStack.push("string 2");
     strStack.push("string 3");
+  }
+
+
+  // test to see whether an element can be popped from a stack.
+  // created a string "e" and pushed it on to the stack
+  // then popped it from the stack.
+  // If the element is popped, the test passes.
+  @Test
+  void testPopOnStack() {
+    strStack.push("e");
+    assertEquals(strStack.pop(), "e");
   }
 
 }
