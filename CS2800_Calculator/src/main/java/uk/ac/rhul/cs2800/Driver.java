@@ -3,7 +3,6 @@ package uk.ac.rhul.cs2800;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
@@ -15,6 +14,7 @@ import javafx.stage.Stage;
  *
  */
 public class Driver extends Application {
+  
 
   /**
    * main method of this class that calls the inbuilt method launch to launch the main pane.
@@ -24,13 +24,15 @@ public class Driver extends Application {
    *        parameter to the launch function.
    */
   public static void main(String[] args) {
-    launch(args);
+    Application.launch(args);
   }
 
   @Override
   public void start(Stage primaryStage) throws Exception {
-    Pane pane = FXMLLoader.load(getClass().getClassLoader().getResource("MainView.fxml"));
-    Scene scene = new Scene(pane, 600, 400);
+    Controller c = new Controller();
+    FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("MainView.fxml"));
+    Scene scene = new Scene(loader.load(), 600, 400);
+    c.addView(loader.getController());
     primaryStage.setScene(scene);
     primaryStage.show();
   }
