@@ -65,6 +65,16 @@ public class testOpStack {
 
   }
 
+  // test to see whether an element can be pushed onto the stack
+  // created a new element, right bracket ("(") of a symbol type and pushed it onto the stack.
+  // The test should pass if a symbol value has been passed. If any other entry type gets
+  // passed, the test should then fail.
+
+  @Test
+  void testPushBracketOnStack() {
+    opStack.push(Symbol.RIGHT_BRACKET);
+
+  }
 
   // test to see whether an element can be popped from a stack.
   // created an element of symbol type and pushed it on to the stack
