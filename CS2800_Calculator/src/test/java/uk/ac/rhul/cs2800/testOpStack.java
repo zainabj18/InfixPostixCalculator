@@ -106,5 +106,12 @@ public class testOpStack {
     assertEquals(opStack.pop(), Symbol.DIVIDE);
   }
 
+  // testing the isEmpty() method on an empty stack to check
+  // whether the method returns true when stack size is 0
+  @Test
+  void testIsEmptyOnEmptyStack() {
+    assertEquals(opStack.isEmpty(), true);
+  }
+
 
 }

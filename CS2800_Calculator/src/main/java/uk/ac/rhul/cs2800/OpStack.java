@@ -44,6 +44,16 @@ public class OpStack {
 
   }
 
+  /**
+   * boolean method isEmpty to test if the stack is empty.
+   * 
+   * @return true if the stack is empty
+   */
+  public boolean isEmpty() {
+    return opStack.sizeOfStack() == 0;
+  }
+
+
 }
 
 
