@@ -31,7 +31,6 @@ public class testOpStack {
 
   }
 
-
   // test to see whether an element can be pushed onto the stack
   // created a new element, plus (+) of a symbol type and pushed it onto the stack.
   // The test should pass if a symbol value has been passed. If any other entry type gets
@@ -40,6 +39,16 @@ public class testOpStack {
   @Test
   void testPushAddOnStack() {
     opStack.push(Symbol.PLUS);
+
+  }
+  // test to see whether an element can be pushed onto the stack
+  // created a new element, multiply (x) of a symbol type and pushed it onto the stack.
+  // The test should pass if a symbol value has been passed. If any other entry type gets
+  // passed, the test should then fail.
+
+  @Test
+  void testPushMultiplyOnStack() {
+    opStack.push(Symbol.TIMES);
 
   }
 
