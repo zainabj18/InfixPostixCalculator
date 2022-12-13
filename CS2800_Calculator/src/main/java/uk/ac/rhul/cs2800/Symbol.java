@@ -27,7 +27,14 @@ public enum Symbol {
     return name() + " " + symbol;
   }
 
-  char getValue() {
+
+
+  /**
+   * created a method called getValueAsChar that returns the value of the string as a char type.
+   * 
+   * @return c, a character.
+   */
+  char getValueAsChar() {
     char c = symbol.charAt(0);
     return c;
   }

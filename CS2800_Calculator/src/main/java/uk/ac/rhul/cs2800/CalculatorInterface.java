@@ -10,8 +10,8 @@ public interface CalculatorInterface {
 
   /**
    * method evaluate that belongs to reverse polish calculator and will belong to standard
-   * calculator as well. method declared as abstract as the method itself does not contain any
-   * implementation but it is declared.
+   * calculator as well once created. Method declared as abstract as the method itself does not
+   * contain any implementation but it is declared.
    * 
    * @param inputString is the string passed that is checked.
    * @return a float
