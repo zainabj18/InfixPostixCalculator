@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  * @author Zainab
  *
  */
-public class testNumStack {
+public class TestNumStack {
 
   // creating a new empty stack called numStack from the class NumStack before running the tests
   private NumStack numStack;
