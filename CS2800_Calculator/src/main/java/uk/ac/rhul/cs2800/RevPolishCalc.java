@@ -1,6 +1,7 @@
 package uk.ac.rhul.cs2800;
 
 /**
+ * Credit to: Dave Cohen for the code for getInstance method which i have added into this file.
  * created a class called RevPolishCalc which will evaluate reverse polish string expressions.
  * 
  * @author Zainab
@@ -12,6 +13,26 @@ public class RevPolishCalc {
   float result;
   float value1 = 0;
   float value2 = 0;
+
+
+  /**
+   * The (exactly) one instance of this class. Created in a lazy manner when it is required.
+   */
+  private static RevPolishCalc instance = null;
+
+  /**
+   * The hook to access this Singleton Calculator. The first time it is called it does the actual
+   * instantiation - this is called lazy.
+   * 
+   * @return instance.
+   */
+  public static RevPolishCalc getInstance() {
+    if (instance == null) {
+      instance = new RevPolishCalc();
+    }
+    return instance;
+  }
+
 
   /**
    * creating a method called evaluate for reverse polish notation that will check if the expression
@@ -78,9 +99,9 @@ public class RevPolishCalc {
    */
 
   private boolean isSymbol(char character) {
-    for (Symbol s : Symbol.values()) {
-      if (character == s.getValue()) {
-        return true;
+    for (Symbol s : Symbol.values()) { // for a symbol in the expression
+      if (character == s.getValueAsChar()) { // if the character is a symbol
+        return true; // return true
       }
     }
 
