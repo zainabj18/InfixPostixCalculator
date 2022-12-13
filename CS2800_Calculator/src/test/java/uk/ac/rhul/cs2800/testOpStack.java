@@ -113,5 +113,15 @@ public class testOpStack {
     assertEquals(opStack.isEmpty(), true);
   }
 
+  // testing isEmpty() method on an non empty stack to
+  // check if the method returns false when stack size is not 0
+  // and has elements in it.
+  @Test
+  void testIsEmptyOnNonEmptyStack() {
+    opStack.push(Symbol.PLUS);
+    assertEquals(opStack.isEmpty(), false);
+  }
+
+
 
 }
