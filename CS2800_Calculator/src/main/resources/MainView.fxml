@@ -37,7 +37,7 @@
       <TextField fx:id="resultField" layoutX="174.0" layoutY="261.0" prefHeight="43.0" prefWidth="208.0" />
       <Label fx:id="resultLabel" layoutX="248.0" layoutY="235.0" text="Solution">
          <font>
-            <Font size="16.0" />
+            <Font size="18.0" />
          </font>
       </Label>
    </children>
