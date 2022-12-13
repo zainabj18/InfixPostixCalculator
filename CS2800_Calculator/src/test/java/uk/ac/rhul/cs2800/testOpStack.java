@@ -1,6 +1,8 @@
 package uk.ac.rhul.cs2800;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import java.util.EmptyStackException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -72,6 +74,14 @@ public class testOpStack {
   void testPopOnStack() {
     opStack.push(Symbol.PLUS);
     assertEquals(opStack.pop(), Symbol.PLUS);
+  }
+
+  // test to check whether you can pop from an empty stack using the pop method
+  // when popping from an empty stack, it should throw an emptyStackException error
+  @Test
+  void testPopFromEmptyStack() {
+    assertThrows(EmptyStackException.class, () -> opStack.pop(),
+        "You cannot pop from an empty stack");
   }
 
 
