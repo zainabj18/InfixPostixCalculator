@@ -28,7 +28,7 @@ public class RevPolishCalc {
    */
   public static RevPolishCalc getInstance() {
     if (instance == null) {
-      instance = new RevPolishCalc();
+      instance = new RevPolishCalc();  
     }
     return instance;
   }
