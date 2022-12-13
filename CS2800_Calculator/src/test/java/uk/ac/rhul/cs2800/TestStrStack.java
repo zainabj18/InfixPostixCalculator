@@ -24,4 +24,14 @@ public class TestStrStack {
 
   }
 
+  // test to see multiple strings can be pushed onto the stack. Created three strings and pushed
+  // them onto the stack. The tests should pass if the the values pushed are strings.
+
+  @Test
+  void testPushMultipleStringOnStack() {
+    strStack.push("string 1");
+    strStack.push("string 2");
+    strStack.push("string 3");
+  }
+
 }
