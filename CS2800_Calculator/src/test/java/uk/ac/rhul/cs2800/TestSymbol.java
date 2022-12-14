@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @author Zainab.
  *
  */
-class testSymbol {
+class TestSymbol {
 
 
   // creating a method testToString for the symbol class to test for each of the seven constants of

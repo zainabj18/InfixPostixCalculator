@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  * @author Zainab
  *
  */
-class testStack {
+class TestStack {
   // creating a new empty stack called newStack from the class Stack
 
   private Stack newStack;

@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  * @author Zainab
  *
  */
-public class testOpStack {
+public class TestOpStack {
 
 
   private OpStack opStack;

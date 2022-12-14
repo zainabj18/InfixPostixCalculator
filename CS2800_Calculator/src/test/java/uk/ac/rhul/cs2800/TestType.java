@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @author Zainab.
  *
  */
-class testType {
+class TestType {
 
 
   // creating a testToString method that will test the toString method created in the Type class.
