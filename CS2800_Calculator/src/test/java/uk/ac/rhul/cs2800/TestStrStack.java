@@ -57,4 +57,15 @@ public class TestStrStack {
         "You cannot pop from an empty stack");
   }
 
+
+  // test to check whether the pop() method returns the top value from the stack
+  // pushed 3 strings onto the stack then popped the top string using pop()
+  @Test
+  void testPopOnStackAfterPushingElements() {
+    strStack.push("this");
+    strStack.push("is");
+    strStack.push("a test");
+    assertEquals(strStack.pop(), "a test");
+  }
+
 }
