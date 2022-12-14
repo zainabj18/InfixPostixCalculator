@@ -75,4 +75,13 @@ public class TestStrStack {
     assertEquals(strStack.isEmpty(), true);
   }
 
+  // testing isEmpty() method on an non empty stack to
+  // check if the method returns false when stack size is not 0
+  // and has strings pushed onto it.
+  @Test
+  void testIsEmptyOnNonEmptyStack() {
+    strStack.push("test isEmpty returns false when stack is not empty");
+    assertEquals(strStack.isEmpty(), false);
+  }
+
 }
