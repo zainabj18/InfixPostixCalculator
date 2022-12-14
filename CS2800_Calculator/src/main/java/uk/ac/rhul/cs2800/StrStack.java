@@ -45,4 +45,13 @@ public class StrStack {
 
   }
 
+  /**
+   * boolean method isEmpty to test if the stack is empty.
+   * 
+   * @return true if the stack is empty (size == 0)
+   */
+  public boolean isEmpty() {
+    return strStack.sizeOfStack() == 0;
+  }
+
 }

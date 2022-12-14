@@ -68,4 +68,11 @@ public class TestStrStack {
     assertEquals(strStack.pop(), "a test");
   }
 
+  // testing the isEmpty() method on an empty stack to check
+  // whether the method returns true when stack size is 0
+  @Test
+  void testIsEmptyOnEmptyStack() {
+    assertEquals(strStack.isEmpty(), true);
+  }
+
 }
