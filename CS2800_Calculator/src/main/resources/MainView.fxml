@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -28,8 +29,11 @@
          <font>
             <Font size="16.0" />
          </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup1" />
+         </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="infixButton" layoutX="353.0" layoutY="337.0" mnemonicParsing="false" text="Infix">
+      <RadioButton fx:id="infixButton" layoutX="353.0" layoutY="337.0" mnemonicParsing="false" text="Infix" toggleGroup="$toggleGroup1">
          <font>
             <Font size="16.0" />
          </font>
