@@ -1,5 +1,6 @@
 package uk.ac.rhul.cs2800;
 
+import java.util.EmptyStackException;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -7,19 +8,24 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.Pane;
 
 /**
  * Created a class called MainView which includes the attributes of the main pane of the calculator.
- * Credit to: Dave Cohen for the addCalcObserver method, getQuestion method and setAnswer method.
+ * 
  * 
  * @author Zainab
  *
  */
 public class MainView implements ViewInterface {
 
+  private CalcModel calculator = new CalcModel(); // creating an object calculator of CalcModel
+  private String stringToEvaluate;
+
   /**
-   * This allows a new observer to be added to the change calculate strategy action.
+   * This allows a new observer to be added to the change calculate strategy action. Credit to: Dave
+   * Cohen for the addCalcObserver method, getQuestion method and setAnswer method.
    * 
    * @param f the Observer to be notified.
    */
@@ -49,6 +55,28 @@ public class MainView implements ViewInterface {
    */
   public void setAnswer(String a) {
     resultField.setText(a);
+  }
+
+  /**
+   * method created for the calculate button. When the button is pressed, evaluate() is called
+   * 
+   * @param press allows the action for pressing a button to take place.
+   * @throws EmptyStackException if the button is pressed when stack is empty
+   * @throws InvalidExpression if invalid expression is entered.
+   */
+  @FXML
+  void uponPressingCalculate(ActionEvent press) throws EmptyStackException, InvalidExpression {
+    String string = inputField.getText();
+
+    try {
+      // if selected reversePolishButton, then the RevPolishCalc evaluate() is called
+      if (toggleGroup1.getSelectedToggle() == reversePolishButton) {
+        stringToEvaluate = String.valueOf(calculator.evaluate(string, false));
+      }
+      // catch exception if the stack is empty when calculate button is pressed
+    } catch (EmptyStackException e) {
+      System.out.println("empty stack");
+    }
   }
 
 
@@ -92,4 +120,7 @@ public class MainView implements ViewInterface {
 
   @FXML
   private RadioButton reversePolishButton;
+
+  @FXML
+  private ToggleGroup toggleGroup1;
 }
