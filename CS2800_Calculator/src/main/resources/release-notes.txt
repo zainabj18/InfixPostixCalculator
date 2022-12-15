@@ -9,3 +9,12 @@ Added print statements on the console that appear when an invalid expression is 
 when calculate button is pressed without entering an expression. 
 
 
+Calculator v1.1
+15/12/2022
+
+Modified the buttons on the calculator so that if you now press one of the radio buttons
+then press the other one, the first button you pressed will automatically 'unpress'. 
+This improves the visual of the calculator as it will be much clearer which type of 
+calculator it is called and what kind of expression you will enter. 
+
+
