@@ -58,6 +58,14 @@ public class TestStandardCalc {
   // assertEquals(result, 8);
   // }
 
+  // // test to see if a valid infix expression can be divided.
+  // @Test
+  // void testInfixExprForDivision() {
+  // String string = "9 3 /";
+  // float result = calculator.evaluate(string);
+  // assertEquals(result, 3);
+  // }
+
 
 
 }

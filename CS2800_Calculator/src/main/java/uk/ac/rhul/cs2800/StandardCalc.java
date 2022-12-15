@@ -50,6 +50,8 @@ public class StandardCalc {
           numStack.push(value2 - value1); // push two values that were popped onto the stack
         } else if (type.equals(Symbol.TIMES)) {
           numStack.push(value2 * value1); // push two values that were popped onto the stack
+        } else if (type.equals(Symbol.DIVIDE)) {
+          numStack.push(value2 / value1); // push two values that were popped onto the stack
         }
       } else {
         throw new InvalidExpression();
