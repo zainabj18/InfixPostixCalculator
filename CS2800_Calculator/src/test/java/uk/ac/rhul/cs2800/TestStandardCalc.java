@@ -1,5 +1,6 @@
 package uk.ac.rhul.cs2800;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -24,6 +25,14 @@ public class TestStandardCalc {
     assertThrows(InvalidExpression.class, () -> calculator.evaluate(""),
         "Enter a valid expression to calculate");
   }
+
+  // //test to see if a string passed with one character returns itself.f
+  // @Test
+  // void testOneCharReturnsItself() {
+  // String string = "3";
+  // float result = calculator.evaluate(string);
+  // assertEquals(result, 3);
+  // }
 
 
 
