@@ -3,6 +3,8 @@ package uk.ac.rhul.cs2800;
 /**
  * Credit to: Dave Cohen for the code for getInstance method which i have added into this file.
  * created a class called RevPolishCalc which will evaluate reverse polish string expressions.
+ * credit to  https://codereview.stackexchange.com/questions/120451/reverse-polish-notation-calculator-in-java
+ * for the code inspiration for reverse polish expression
  * 
  * @author Zainab
  *
