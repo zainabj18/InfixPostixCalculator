@@ -48,6 +48,8 @@ public class StandardCalc {
           numStack.push(value1 + value2); // push two values that were popped onto the stack
         } else if (type.equals(Symbol.MINUS)) {
           numStack.push(value2 - value1); // push two values that were popped onto the stack
+        } else if (type.equals(Symbol.TIMES)) {
+          numStack.push(value2 * value1); // push two values that were popped onto the stack
         }
       } else {
         throw new InvalidExpression();

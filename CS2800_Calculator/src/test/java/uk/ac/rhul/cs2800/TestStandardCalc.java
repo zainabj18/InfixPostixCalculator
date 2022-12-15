@@ -50,6 +50,14 @@ public class TestStandardCalc {
   // assertEquals(result, 5);
   // }
 
+  // // test to see if a valid infix expression can be multiplied.
+  // @Test
+  // void testInfixExprForMultiplication() {
+  // String string = "4 x 2";
+  // float result = calculator.evaluate(string);
+  // assertEquals(result, 8);
+  // }
+
 
 
 }
