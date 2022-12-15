@@ -34,6 +34,22 @@ public class TestStandardCalc {
   // assertEquals(result, 3);
   // }
 
+  // test to see if a valid infix expression can be added.
+  // @Test
+  // void testInfixExpr() {
+  // String string = "2 + 4";
+  // float result = calculator.evaluate(string);
+  // assertEquals(result, 6);
+  // }
+  //
+  // // test to see if a valid infix expression can be subtracted.
+  // @Test
+  // void testInfixExprForSubtract() {
+  // String string = "7 - 2";
+  // float result = calculator.evaluate(string);
+  // assertEquals(result, 5);
+  // }
+
 
 
 }
