@@ -65,10 +65,10 @@ A simple Java command-line calculator that converts **infix** arithmetic express
 ## Project Structure
 
     src/
-├── Main.java # CLI entry point
-├── Tokenizer.java # Tokenizes input strings
-├── InfixToPostfix.java # Converts infix to postfix
-└── PostfixEvaluator.java # Evaluates postfix expressions
+      ├── Main.java # CLI entry point
+      ├── Tokenizer.java # Tokenizes input strings
+      ├── InfixToPostfix.java # Converts infix to postfix
+      └── PostfixEvaluator.java # Evaluates postfix expressions
 
 
 
